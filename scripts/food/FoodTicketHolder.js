@@ -3,7 +3,7 @@ const eventHub = document.querySelector("#state-fair")
 
 export const FoodTicketHolders = () => {
     eventHub.addEventListener("rideTicketPurchased", (customEvent) => {
-        if (customEvent.detail.name === "foodTicket") {
+        if (customEvent.detail.name === "foodTicket") { 
         contentTarget.innerHTML += `
         <div class="person eater"></div>`
         }
